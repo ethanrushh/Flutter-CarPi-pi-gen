@@ -15,7 +15,7 @@ To Build:
 ```
 sudo ./build.sh -c config
 ```
-This will take some time. If successful, you should find your ready to go .img file in deploy/<date>-carpi-os-configured.img
+This will take some time. If successful, you should find your ready to go .img file in deploy/<date\>-carpi-os-configured.img
 
 
 ## Disclaimer
