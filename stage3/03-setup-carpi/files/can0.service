@@ -1,0 +1,13 @@
+
+[Unit]
+Description=CAN Setup
+After=network.target
+
+[Service]
+Type=oneshot
+User=root
+ExecStart=ip link set can0 up type can bitrate 100000
+RemainAfterExit=yes
+
+[Install]
+WantedBy=multi-user.target

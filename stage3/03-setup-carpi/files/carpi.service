@@ -1,0 +1,18 @@
+
+[Unit]
+Description=CarPi
+After=pipewire.service wireplumber.service
+Requires=pipewire.service wireplumber.service
+
+[Service]
+Type=simple
+WorkingDirectory=/home/pi/Flutter-CarPi/build/elinux/arm64/release/bundle
+ExecStart=/home/pi/Flutter-CarPi/launch.sh
+Restart=on-failure
+RestartSec=2
+Environment=PATH=/opt/flutter-elinux/bin:/usr/local/bin:/usr/bin:/bin
+StandardOutput=file:/home/pi/carpi.log
+StandardError=file:/home/pi/carpi.log
+
+[Install]
+WantedBy=default.target

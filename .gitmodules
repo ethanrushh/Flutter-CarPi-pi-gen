@@ -1,0 +1,3 @@
+[submodule "stage3/03-setup-carpi/files/Flutter-CarPi"]
+	path = stage3/03-setup-carpi/files/Flutter-CarPi
+	url = https://github.com/ethanrushh/Flutter-CarPi.git
